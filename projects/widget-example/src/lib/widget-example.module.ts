@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { WidgetExampleComponent } from './widget-example.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -8,6 +9,7 @@ import { WidgetExampleComponent } from './widget-example.component';
     WidgetExampleComponent
   ],
   imports: [
+    FormsModule
   ],
   exports: [
     WidgetExampleComponent

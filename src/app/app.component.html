@@ -1,1 +1,7 @@
-<lib-widget-example></lib-widget-example>
+<lib-widget-example
+  [widgetInput]="'Widget Calculator'"
+  (widgetOutput)="printOutput($event)" >
+</lib-widget-example>
+<div>
+  {{ widgetResult }}
+</div>

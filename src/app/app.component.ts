@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-elements-example';
+  widgetResult = 'Widget Result: -';
+
+  printOutput(event: number): void {
+    this.widgetResult = `Widget Result: ${event}`;
+  }
 }
