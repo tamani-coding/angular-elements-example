@@ -1,13 +1,13 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'lib-widget-example',
-  templateUrl: './widget-example.component.html',
-  styleUrls: ['./widget-example.component.scss']
+  selector: 'app-calculator-widget',
+  templateUrl: './calculator-widget.component.html',
+  styleUrls: ['./calculator-widget.component.scss']
 })
-export class WidgetExampleComponent {
+export class CalculatorWidgetComponent {
 
-  @Input() widgetInput = 'Widget Example';
+  @Input() widgetInput = 'Angular Calculator Component';
   @Output() widgetOutput = new EventEmitter<number>();
 
   number1 = 0;

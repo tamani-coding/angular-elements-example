@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./polyfills.js"></script>
+    <script src="./runtime.js"></script>
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <calculator-widget id="widget" widget-input="Calculator as Custom Component"></calculator-widget>
+    <script>
+      document.getElementById('widget').addEventListener('widgetOutput', function (e) {
+        document.getElementById('widgetResult').innerHTML = 'Widget Result: ' + e.detail;
+      })
+    </script>
+    <div id="widgetResult"></div>
+  </body>
+</html>
